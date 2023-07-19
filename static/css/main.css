@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    background: linear-gradient(90deg, #62dab4, #10bed4);
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav img {
+    width: 12%;
+    height: 12%;
+    margin-left: 20px;
+}
+
+.nav a {
+    margin-left: 100px;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    background-color: #0083B0;
+    color: white;
+}

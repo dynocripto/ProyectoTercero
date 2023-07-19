@@ -1,0 +1,29 @@
+{% extends './base.html' %}
+
+{% block title %}Citas{% endblock %}
+{% block customCSS %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+{% endblock %}
+
+{% block body %}
+   <div class="container">
+
+    <form class="form-signin" action="/products" method="POST">
+        <h1 class="h3 mb-3 fw-normal">Agende una cita</h1>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Producto">
+            <label for="name">Nombre del paciente</label>
+        </div>
+        <div class="form-floating mt-2">
+            <input type="number" class="form-control" name="stock" placeholder="Edad">
+            <label for="stock">Edad</label>
+        </div>
+        <div class="form-floating mt-2">
+            <input type="date" class="form-control" name="value" placeholder="Fecha de la Consulta">
+            <label for="value">Fecha de la Consulta</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary submit" type="submit">Agendar</button>
+    </form>
+
+   </div>
+{% endblock %}

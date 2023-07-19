@@ -1,0 +1,25 @@
+{% extends './base.html' %}
+<head>
+    <title>Acerca de</title>
+    {% block customCSS %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/flask.svg') }}">
+        {% endblock %}
+</head>
+
+{% block body %}
+    <h2>Estamos trabajando en ello, sé paciente</h1>
+    <main class="container">
+        <div class="pacman"></div>
+        <div class="path"></div>
+        <div class="path"></div>
+        <div class="path"></div>
+        <div class="path"></div>
+        <div class="path"></div>
+        <div class="path"></div>
+        <div class="path"></div>
+        <div class="path"></div>
+    </main>
+    <button><a href="{{ url_for('home') }}">Ir a inicio</a></button>
+
+{% endblock %}
